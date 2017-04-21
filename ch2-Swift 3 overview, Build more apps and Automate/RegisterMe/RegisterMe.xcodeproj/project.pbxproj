@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AB8110E1EA9ACE800CC04CD /* RegisterMePositiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8110D1EA9ACE800CC04CD /* RegisterMePositiveTests.swift */; };
+		1AB811101EA9AD2F00CC04CD /* RegisterMeNegativeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8110F1EA9AD2F00CC04CD /* RegisterMeNegativeTests.swift */; };
+		1AB811121EA9AD7500CC04CD /* TestCommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB811111EA9AD7500CC04CD /* TestCommons.swift */; };
 		1ACDBBC71EA59FB80004E06D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACDBBC61EA59FB80004E06D /* AppDelegate.swift */; };
 		1ACDBBC91EA59FB80004E06D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACDBBC81EA59FB80004E06D /* ViewController.swift */; };
 		1ACDBBCC1EA59FB80004E06D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ACDBBCA1EA59FB80004E06D /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AB8110D1EA9ACE800CC04CD /* RegisterMePositiveTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterMePositiveTests.swift; sourceTree = "<group>"; };
+		1AB8110F1EA9AD2F00CC04CD /* RegisterMeNegativeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterMeNegativeTests.swift; sourceTree = "<group>"; };
+		1AB811111EA9AD7500CC04CD /* TestCommons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCommons.swift; sourceTree = "<group>"; };
 		1ACDBBC31EA59FB80004E06D /* RegisterMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegisterMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ACDBBC61EA59FB80004E06D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1ACDBBC81EA59FB80004E06D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +98,9 @@
 			children = (
 				1ACDBBDB1EA59FB80004E06D /* RegisterMeUITests.swift */,
 				1ACDBBDD1EA59FB80004E06D /* Info.plist */,
+				1AB8110D1EA9ACE800CC04CD /* RegisterMePositiveTests.swift */,
+				1AB8110F1EA9AD2F00CC04CD /* RegisterMeNegativeTests.swift */,
+				1AB811111EA9AD7500CC04CD /* TestCommons.swift */,
 			);
 			path = RegisterMeUITests;
 			sourceTree = "<group>";
@@ -210,7 +219,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB811121EA9AD7500CC04CD /* TestCommons.swift in Sources */,
+				1AB811101EA9AD2F00CC04CD /* RegisterMeNegativeTests.swift in Sources */,
 				1ACDBBDC1EA59FB80004E06D /* RegisterMeUITests.swift in Sources */,
+				1AB8110E1EA9ACE800CC04CD /* RegisterMePositiveTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +424,7 @@
 				1ACDBBE21EA59FB80004E06D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1ACDBBE31EA59FB80004E06D /* Build configuration list for PBXNativeTarget "RegisterMeUITests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				1ACDBBE51EA59FB80004E06D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
