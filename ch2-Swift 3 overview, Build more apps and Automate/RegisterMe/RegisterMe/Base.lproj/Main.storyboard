@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SxG-Ah-a7y">
-                                <rect key="frame" x="16" y="112" width="343" height="116"/>
+                                <rect key="frame" x="16" y="88" width="343" height="116"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pPk-mJ-fWL">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -103,14 +103,14 @@
                                 </constraints>
                             </stackView>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IhS-nk-HOk">
-                                <rect key="frame" x="16" y="337" width="343" height="310"/>
+                                <rect key="frame" x="16" y="256" width="343" height="211"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Z3-DZ-2uU">
-                                <rect key="frame" x="16" y="236" width="343" height="93"/>
+                                <rect key="frame" x="16" y="212" width="343" height="36"/>
                                 <accessibility key="accessibilityConfiguration" identifier="auto_default_label"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="93" id="QgC-he-Ac2"/>
+                                    <constraint firstAttribute="height" constant="36" id="QgC-he-Ac2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.94509803920000002" green="0.1019607843" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -119,8 +119,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.84313725490196079" green="0.78823529411764703" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IhS-nk-HOk" secondAttribute="bottom" constant="20" id="4Q8-jd-pMa"/>
-                            <constraint firstItem="SxG-Ah-a7y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="8Yb-Jj-wnN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IhS-nk-HOk" secondAttribute="bottom" constant="200" id="4Q8-jd-pMa"/>
+                            <constraint firstItem="SxG-Ah-a7y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="8Yb-Jj-wnN"/>
                             <constraint firstItem="IhS-nk-HOk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9sU-B0-55c"/>
                             <constraint firstItem="IhS-nk-HOk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Z2Y-OE-gwz"/>
                             <constraint firstItem="SxG-Ah-a7y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cGp-tT-01t"/>
