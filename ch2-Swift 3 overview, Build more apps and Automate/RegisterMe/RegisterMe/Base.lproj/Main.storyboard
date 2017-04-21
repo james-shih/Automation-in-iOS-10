@@ -113,7 +113,7 @@
                                     <constraint firstAttribute="height" constant="93" id="QgC-he-Ac2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.94509803920000002" green="0.1019607843" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
