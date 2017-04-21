@@ -49,7 +49,7 @@ class RegisterMeUITests: XCTestCase {
         
         let submitBtn = app.buttons["auto_submit"]
         submitBtn.tap()
-        sleep(3)
+        sleep(1)
     }
     
     func doesConfirmationLinkExists() -> Bool {
@@ -116,10 +116,10 @@ class RegisterMeUITests: XCTestCase {
     }
     
     func testRegistationPassesForNewUserWithValidNameAndEmail() {
-        enterName(name: "AutoUser10")
-        enterEmail(email: "autouser10@test.com")
+        enterName(name: "AutoUser11")
+        enterEmail(email: "autouser11@test.com")
         clickSubmitButton()
-        sleep(5)
+        sleep(1)
         
         if doesConfirmationLinkExists() {
             clickOnConfirmationLink()
@@ -170,6 +170,69 @@ class RegisterMeUITests: XCTestCase {
         XCTAssertTrue(doesConfirmationLinkExists())
     }
     
+    func testTextFidldForNameStartingWithNumber() {
+        
+        let name = "3autouser"
+        let email = "3autouser@test.com"
+        enterName(name: name)
+        enterEmail(email: email)
+        clickSubmitButton()
+        
+        let text = getTextFromDefaultLabel()
+        XCTAssertTrue(!text.isEmpty)
+    }
+    
+    func testTextFieldForNameStartingWithSpecialCharacter() {
+        
+        let name = "$autouser10"
+        let email = "autouser10@test.com"
+        
+        enterName(name: name)
+        enterEmail(email: email)
+        clickSubmitButton()
+        
+        let text = getTextFromDefaultLabel()
+        XCTAssertTrue(!text.isEmpty)
+    }
+    
+    func testTextFieldForNameStartingWithSpace() {
+        
+        let name = " autouser10"
+        let email = "autouser10@test.com"
+        
+        enterName(name: name)
+        enterEmail(email: email)
+        clickSubmitButton()
+        
+        let text = getTextFromDefaultLabel()
+        XCTAssertTrue(text.isEmpty)
+    }
+    
+    func testTextFieldForNameEndWithSpace() {
+        
+        let name = "autouser10 "
+        let email = "autouser10@test.com"
+        
+        enterName(name: name)
+        enterEmail(email: email)
+        clickSubmitButton()
+        
+        let text = getTextFromDefaultLabel()
+        XCTAssertTrue(text.isEmpty)
+    }
+
+    func testTextFieldForEmailAddress() {
+        
+        let name = "autouser44"
+        let email = "autouser44"
+        
+        enterName(name: name)
+        enterEmail(email: email)
+        clickSubmitButton()
+        
+        let text = getTextFromDefaultLabel()
+        XCTAssertTrue(!text.isEmpty)
+    }
 }
 
 
