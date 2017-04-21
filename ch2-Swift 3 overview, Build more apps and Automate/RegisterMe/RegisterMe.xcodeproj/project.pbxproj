@@ -15,7 +15,6 @@
 		1ACDBBCC1EA59FB80004E06D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ACDBBCA1EA59FB80004E06D /* Main.storyboard */; };
 		1ACDBBCE1EA59FB80004E06D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ACDBBCD1EA59FB80004E06D /* Assets.xcassets */; };
 		1ACDBBD11EA59FB80004E06D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ACDBBCF1EA59FB80004E06D /* LaunchScreen.storyboard */; };
-		1ACDBBDC1EA59FB80004E06D /* RegisterMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACDBBDB1EA59FB80004E06D /* RegisterMeUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +39,6 @@
 		1ACDBBD01EA59FB80004E06D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1ACDBBD21EA59FB80004E06D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1ACDBBD71EA59FB80004E06D /* RegisterMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegisterMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1ACDBBDB1EA59FB80004E06D /* RegisterMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterMeUITests.swift; sourceTree = "<group>"; };
 		1ACDBBDD1EA59FB80004E06D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,7 +94,6 @@
 		1ACDBBDA1EA59FB80004E06D /* RegisterMeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				1ACDBBDB1EA59FB80004E06D /* RegisterMeUITests.swift */,
 				1ACDBBDD1EA59FB80004E06D /* Info.plist */,
 				1AB8110D1EA9ACE800CC04CD /* RegisterMePositiveTests.swift */,
 				1AB8110F1EA9AD2F00CC04CD /* RegisterMeNegativeTests.swift */,
@@ -221,7 +218,6 @@
 			files = (
 				1AB811121EA9AD7500CC04CD /* TestCommons.swift in Sources */,
 				1AB811101EA9AD2F00CC04CD /* RegisterMeNegativeTests.swift in Sources */,
-				1ACDBBDC1EA59FB80004E06D /* RegisterMeUITests.swift in Sources */,
 				1AB8110E1EA9ACE800CC04CD /* RegisterMePositiveTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
