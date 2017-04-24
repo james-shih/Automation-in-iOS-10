@@ -9,7 +9,37 @@
 import XCTest
 
 class CakesUITests: XCTestCase {
+    
+    let app = XCUIApplication()
+    let item_choclate = "Choclate Cake"
+    let item_vanilla = "Vanilla Cake"
+    let item_darkForest = "DarkForest Cake"
+    let item_redVelvet = "Red Velvet Cake"
+    let item_strawberry = "Strawberry Cake"
+    
+    func getScreenContents(itemName: String) -> String {
         
+        var contents = ""
+        app.tables.staticTexts[itemName].tap()
+        app.navigationBars.buttons["More Cakes"].tap()
+        contents = app.debugDescription
+        
+        return contents
+    }
+    
+    func matches(for pattern: String, in source: String) -> [String] {
+        
+        do {
+            let regex = try NSRegularExpression(pattern: pattern)
+            let nsString = source as NSString
+            let results = regex.matches(in: source, range: NSRange(location: 0, length: nsString.length))
+            return results.map { nsString.substring(with: $0.range)}
+        } catch let error {
+            print("invalid regex: \(error.localizedDescription)")
+            return []
+        }
+    }
+    
     override func setUp() {
         super.setUp()
         
@@ -36,6 +66,21 @@ class CakesUITests: XCTestCase {
          3. Receipe: Receipe for Choclate cake is displayed on the screen
          */
         
+        let dump = getScreenContents(itemName: item_choclate)
+        let patternName = item_choclate
+        let patternImage = "Image.*"
+        let patternReceipe = "In a bowl.*"
+        
+        let resultName = matches(for: patternName, in: dump)
+        print(resultName)
+        
+        let resultImage = matches(for: patternImage, in: dump)
+        print(resultImage)
+        
+        let resultReceipe = matches(for: patternReceipe, in: dump)
+        print(resultReceipe)
+        
+        XCTAssertFalse(resultName.isEmpty && resultImage.isEmpty && resultReceipe.isEmpty)
     }
     
     func testVanillaCakeScreen() {
@@ -45,6 +90,23 @@ class CakesUITests: XCTestCase {
          2. Image: Image is visible on the screen
          3. Receipe: Receipe for Vanilla cake is displayed on the screen
          */
+        
+        let dump = getScreenContents(itemName: item_vanilla)
+        let patternName = item_vanilla
+        let patternImage = "Image.*"
+        let patternReceipe = "Preheat oven to.*"
+        
+        let resultName = matches(for: patternName, in: dump)
+        print(resultName)
+        
+        let resultImage = matches(for: patternImage, in: dump)
+        print(resultImage)
+        
+        let resultReceipe = matches(for: patternReceipe, in: dump)
+        print(resultReceipe)
+        
+        XCTAssertFalse(resultName.isEmpty && resultImage.isEmpty && resultReceipe.isEmpty)
+
     }
     
     func testDarkForestCakeScreen() {
@@ -54,6 +116,22 @@ class CakesUITests: XCTestCase {
          2. Image: Image is visible on the screen
          3. Receipe: Receipe for DarkForest cake is displayed on the screen
          */
+        
+        let dump = getScreenContents(itemName: item_darkForest)
+        let patternName = item_darkForest
+        let patternImage = "Image.*"
+        let patternReceipe = "In a large bowl.*"
+        
+        let resultName = matches(for: patternName, in: dump)
+        print(resultName)
+        
+        let resultImage = matches(for: patternImage, in: dump)
+        print(resultImage)
+        
+        let resultReceipe = matches(for: patternReceipe, in: dump)
+        print(resultReceipe)
+        
+        XCTAssertFalse(resultName.isEmpty && resultImage.isEmpty && resultReceipe.isEmpty)
     }
     
     func testRedVelvetCakeScreen() {
@@ -63,6 +141,22 @@ class CakesUITests: XCTestCase {
          2. Image: Image is visible on the screen
          3. Receipe: Receipe for RedVelvet cake is displayed on the screen
          */
+        
+        let dump = getScreenContents(itemName: item_redVelvet)
+        let patternName = item_redVelvet
+        let patternImage = "Image.*"
+        let patternReceipe = "Beat butter and.*"
+        
+        let resultName = matches(for: patternName, in: dump)
+        print(resultName)
+        
+        let resultImage = matches(for: patternImage, in: dump)
+        print(resultImage)
+        
+        let resultReceipe = matches(for: patternReceipe, in: dump)
+        print(resultReceipe)
+        
+        XCTAssertFalse(resultName.isEmpty && resultImage.isEmpty && resultReceipe.isEmpty)
     }
     
     func testStrawberryCakeScreen() {
@@ -72,6 +166,22 @@ class CakesUITests: XCTestCase {
          2. Image: Image is visible on the screen
          3. Receipe: Receipe for Strawberry cake is displayed on the screen
          */
+        
+        let dump = getScreenContents(itemName: item_strawberry)
+        let patternName = item_strawberry
+        let patternImage = "Image.*"
+        let patternReceipe = "In a large bowl, cream.*"
+        
+        let resultName = matches(for: patternName, in: dump)
+        print(resultName)
+        
+        let resultImage = matches(for: patternImage, in: dump)
+        print(resultImage)
+        
+        let resultReceipe = matches(for: patternReceipe, in: dump)
+        print(resultReceipe)
+        
+        XCTAssertFalse(resultName.isEmpty && resultImage.isEmpty && resultReceipe.isEmpty)
     }
 
     
