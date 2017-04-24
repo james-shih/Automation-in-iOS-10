@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		214161BF1E09AE6700DA537A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214161BE1E09AE6700DA537A /* AppDelegate.swift */; };
+		214161C11E09AE6700DA537A /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214161C01E09AE6700DA537A /* MasterViewController.swift */; };
+		214161C31E09AE6700DA537A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214161C21E09AE6700DA537A /* DetailViewController.swift */; };
+		214161C61E09AE6700DA537A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214161C41E09AE6700DA537A /* Main.storyboard */; };
+		214161C81E09AE6700DA537A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 214161C71E09AE6700DA537A /* Assets.xcassets */; };
+		214161CB1E09AE6700DA537A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214161C91E09AE6700DA537A /* LaunchScreen.storyboard */; };
+		214161D61E09AE6700DA537A /* CakesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214161D51E09AE6700DA537A /* CakesUITests.swift */; };
+		214161E11E09B0BB00DA537A /* Cake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214161E01E09B0BB00DA537A /* Cake.swift */; };
+		214161E91E09B0CB00DA537A /* black_forest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 214161E21E09B0CB00DA537A /* black_forest.jpg */; };
+		214161EA1E09B0CB00DA537A /* black_forest1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 214161E31E09B0CB00DA537A /* black_forest1.jpg */; };
+		214161EB1E09B0CB00DA537A /* choc_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 214161E41E09B0CB00DA537A /* choc_cake.jpg */; };
+		214161EC1E09B0CB00DA537A /* dark_forest_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 214161E51E09B0CB00DA537A /* dark_forest_cake.jpg */; };
+		214161ED1E09B0CB00DA537A /* red_velvet_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 214161E61E09B0CB00DA537A /* red_velvet_cake.jpg */; };
+		214161EE1E09B0CB00DA537A /* starwberry_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 214161E71E09B0CB00DA537A /* starwberry_cake.jpg */; };
+		214161EF1E09B0CB00DA537A /* vanilla_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 214161E81E09B0CB00DA537A /* vanilla_cake.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		214161D21E09AE6700DA537A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 214161B31E09AE6700DA537A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 214161BA1E09AE6700DA537A;
+			remoteInfo = Cakes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		214161BB1E09AE6700DA537A /* Cakes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cakes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		214161BE1E09AE6700DA537A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		214161C01E09AE6700DA537A /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		214161C21E09AE6700DA537A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		214161C51E09AE6700DA537A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		214161C71E09AE6700DA537A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		214161CA1E09AE6700DA537A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		214161CC1E09AE6700DA537A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		214161D11E09AE6700DA537A /* CakesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CakesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		214161D51E09AE6700DA537A /* CakesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakesUITests.swift; sourceTree = "<group>"; };
+		214161D71E09AE6700DA537A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		214161E01E09B0BB00DA537A /* Cake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cake.swift; sourceTree = "<group>"; };
+		214161E21E09B0CB00DA537A /* black_forest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = black_forest.jpg; path = Assets.xcassets/black_forest.jpg; sourceTree = "<group>"; };
+		214161E31E09B0CB00DA537A /* black_forest1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = black_forest1.jpg; path = Assets.xcassets/black_forest1.jpg; sourceTree = "<group>"; };
+		214161E41E09B0CB00DA537A /* choc_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = choc_cake.jpg; path = Assets.xcassets/choc_cake.jpg; sourceTree = "<group>"; };
+		214161E51E09B0CB00DA537A /* dark_forest_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dark_forest_cake.jpg; path = Assets.xcassets/dark_forest_cake.jpg; sourceTree = "<group>"; };
+		214161E61E09B0CB00DA537A /* red_velvet_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = red_velvet_cake.jpg; path = Assets.xcassets/red_velvet_cake.jpg; sourceTree = "<group>"; };
+		214161E71E09B0CB00DA537A /* starwberry_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = starwberry_cake.jpg; path = Assets.xcassets/starwberry_cake.jpg; sourceTree = "<group>"; };
+		214161E81E09B0CB00DA537A /* vanilla_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = vanilla_cake.jpg; path = Assets.xcassets/vanilla_cake.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		214161B81E09AE6700DA537A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		214161CE1E09AE6700DA537A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A8839121EADA176006A5EA6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				214161E21E09B0CB00DA537A /* black_forest.jpg */,
+				214161E31E09B0CB00DA537A /* black_forest1.jpg */,
+				214161E41E09B0CB00DA537A /* choc_cake.jpg */,
+				214161E51E09B0CB00DA537A /* dark_forest_cake.jpg */,
+				214161E61E09B0CB00DA537A /* red_velvet_cake.jpg */,
+				214161E71E09B0CB00DA537A /* starwberry_cake.jpg */,
+				214161E81E09B0CB00DA537A /* vanilla_cake.jpg */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		214161B21E09AE6700DA537A = {
+			isa = PBXGroup;
+			children = (
+				214161BD1E09AE6700DA537A /* Cakes */,
+				214161D41E09AE6700DA537A /* CakesUITests */,
+				214161BC1E09AE6700DA537A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		214161BC1E09AE6700DA537A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				214161BB1E09AE6700DA537A /* Cakes.app */,
+				214161D11E09AE6700DA537A /* CakesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		214161BD1E09AE6700DA537A /* Cakes */ = {
+			isa = PBXGroup;
+			children = (
+				214161E01E09B0BB00DA537A /* Cake.swift */,
+				214161BE1E09AE6700DA537A /* AppDelegate.swift */,
+				214161C01E09AE6700DA537A /* MasterViewController.swift */,
+				214161C21E09AE6700DA537A /* DetailViewController.swift */,
+				214161C41E09AE6700DA537A /* Main.storyboard */,
+				214161C71E09AE6700DA537A /* Assets.xcassets */,
+				214161C91E09AE6700DA537A /* LaunchScreen.storyboard */,
+				214161CC1E09AE6700DA537A /* Info.plist */,
+				1A8839121EADA176006A5EA6 /* Resource */,
+			);
+			path = Cakes;
+			sourceTree = "<group>";
+		};
+		214161D41E09AE6700DA537A /* CakesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				214161D51E09AE6700DA537A /* CakesUITests.swift */,
+				214161D71E09AE6700DA537A /* Info.plist */,
+			);
+			path = CakesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		214161BA1E09AE6700DA537A /* Cakes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 214161DA1E09AE6700DA537A /* Build configuration list for PBXNativeTarget "Cakes" */;
+			buildPhases = (
+				214161B71E09AE6700DA537A /* Sources */,
+				214161B81E09AE6700DA537A /* Frameworks */,
+				214161B91E09AE6700DA537A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cakes;
+			productName = Cakes;
+			productReference = 214161BB1E09AE6700DA537A /* Cakes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		214161D01E09AE6700DA537A /* CakesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 214161DD1E09AE6700DA537A /* Build configuration list for PBXNativeTarget "CakesUITests" */;
+			buildPhases = (
+				214161CD1E09AE6700DA537A /* Sources */,
+				214161CE1E09AE6700DA537A /* Frameworks */,
+				214161CF1E09AE6700DA537A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				214161D31E09AE6700DA537A /* PBXTargetDependency */,
+			);
+			name = CakesUITests;
+			productName = CakesUITests;
+			productReference = 214161D11E09AE6700DA537A /* CakesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		214161B31E09AE6700DA537A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Alpa Sanghavi";
+				TargetAttributes = {
+					214161BA1E09AE6700DA537A = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					214161D01E09AE6700DA537A = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 214161BA1E09AE6700DA537A;
+					};
+				};
+			};
+			buildConfigurationList = 214161B61E09AE6700DA537A /* Build configuration list for PBXProject "Cakes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 214161B21E09AE6700DA537A;
+			productRefGroup = 214161BC1E09AE6700DA537A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				214161BA1E09AE6700DA537A /* Cakes */,
+				214161D01E09AE6700DA537A /* CakesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		214161B91E09AE6700DA537A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				214161CB1E09AE6700DA537A /* LaunchScreen.storyboard in Resources */,
+				214161C81E09AE6700DA537A /* Assets.xcassets in Resources */,
+				214161EE1E09B0CB00DA537A /* starwberry_cake.jpg in Resources */,
+				214161EC1E09B0CB00DA537A /* dark_forest_cake.jpg in Resources */,
+				214161EB1E09B0CB00DA537A /* choc_cake.jpg in Resources */,
+				214161EF1E09B0CB00DA537A /* vanilla_cake.jpg in Resources */,
+				214161EA1E09B0CB00DA537A /* black_forest1.jpg in Resources */,
+				214161ED1E09B0CB00DA537A /* red_velvet_cake.jpg in Resources */,
+				214161E91E09B0CB00DA537A /* black_forest.jpg in Resources */,
+				214161C61E09AE6700DA537A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		214161CF1E09AE6700DA537A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		214161B71E09AE6700DA537A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				214161C31E09AE6700DA537A /* DetailViewController.swift in Sources */,
+				214161E11E09B0BB00DA537A /* Cake.swift in Sources */,
+				214161C11E09AE6700DA537A /* MasterViewController.swift in Sources */,
+				214161BF1E09AE6700DA537A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		214161CD1E09AE6700DA537A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				214161D61E09AE6700DA537A /* CakesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		214161D31E09AE6700DA537A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 214161BA1E09AE6700DA537A /* Cakes */;
+			targetProxy = 214161D21E09AE6700DA537A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		214161C41E09AE6700DA537A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				214161C51E09AE6700DA537A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		214161C91E09AE6700DA537A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				214161CA1E09AE6700DA537A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		214161D81E09AE6700DA537A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		214161D91E09AE6700DA537A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		214161DB1E09AE6700DA537A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Cakes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SJI.Cakes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		214161DC1E09AE6700DA537A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Cakes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SJI.Cakes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		214161DE1E09AE6700DA537A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = CakesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SJI.CakesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Cakes;
+			};
+			name = Debug;
+		};
+		214161DF1E09AE6700DA537A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = CakesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SJI.CakesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Cakes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		214161B61E09AE6700DA537A /* Build configuration list for PBXProject "Cakes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				214161D81E09AE6700DA537A /* Debug */,
+				214161D91E09AE6700DA537A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		214161DA1E09AE6700DA537A /* Build configuration list for PBXNativeTarget "Cakes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				214161DB1E09AE6700DA537A /* Debug */,
+				214161DC1E09AE6700DA537A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		214161DD1E09AE6700DA537A /* Build configuration list for PBXNativeTarget "CakesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				214161DE1E09AE6700DA537A /* Debug */,
+				214161DF1E09AE6700DA537A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 214161B31E09AE6700DA537A /* Project object */;
+}
