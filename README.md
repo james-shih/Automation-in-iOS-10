@@ -1,6 +1,6 @@
-# Automation-in-iOS-10
+# Learning Automation-in-iOS-10
 
-## 學習目標
+## 目標
 * 實作登入註冊測試程式
 
 ## 學習計畫
@@ -10,7 +10,7 @@
 4. Code Coverage
 5. User Interface Testing
 
-## 學習資源
+## 資源
 * [Automation in iOS 10](https://www.udemy.com/automation-ios-10/learn/v4/content) - Udemy
 * [Testing with Xcode](https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/testing_with_xcode/chapters/01-introduction.html#//apple_ref/doc/uid/TP40014132-CH1-SW1)
 * [XCTest-Overview](https://developer.apple.com/reference/xctest)
