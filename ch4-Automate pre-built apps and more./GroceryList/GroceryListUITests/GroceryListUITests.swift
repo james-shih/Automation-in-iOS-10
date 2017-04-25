@@ -67,7 +67,7 @@ class GroceryListUITests: XCTestCase {
         app.alerts["Invalid Items"].buttons["OK"].tap()
     }
     
-    func gerItemInList() -> Int {
+    func getItemInList() -> Int {
         return Int(app.tables.cells.count)
     }
     
@@ -91,20 +91,87 @@ class GroceryListUITests: XCTestCase {
 
     func testAddNewItem() {
         
+        let name = "Milk"
+        let quality = "1"
+        let value = "Gallon"
+        
+        let beforeCount = getItemInList()
+        addItem(name: name, quality: quality, item: value)
+        tapOnGraceryList()
+        let afterCount = getItemInList()
+        
+        XCTAssertTrue(afterCount > beforeCount)
     }
     
     func testValidateCancelOnAlertForDuplicateItems() {
+        
+        let name = "Cookies"
+        let quality = "2"
+        let value = "Boxes"
+        
+        let beforeCount = getItemInList()
+        addItem(name: name, quality: quality, item: value)
+        clickCancelButtonOnAlert()
+        tapOnGraceryList()
+        let afterCount = getItemInList()
+        
+        XCTAssertTrue(afterCount == beforeCount)
         
     }
     
     func testDeleteItem() {
         
+        let name = "Bread"
+        let quality = "1"
+        let value = "Pack"
+        
+        addItem(name: name, quality: quality, item: value)
+        tapOnGraceryList()
+        sleep(1)
+        
+        let beforeCount = getItemInList()
+        
+        let detailText = name + " " + quality + " " + value
+        deleteItem(item: detailText)
+        sleep(2)
+        let afterCount = getItemInList()
+        
+        XCTAssertTrue(afterCount < beforeCount)
+        
     }
     
     func testItemNameAndQualityBothEmpty() {
         
+        let value = "Box"
+        addItem(name: "", quality: "", item: value)
+        
+        let founded = app.alerts["Invalid Items"].buttons["OK"].exists
+        if founded {
+            clickOkOnInvalidItemAlert()
+        }
+        
+        XCTAssertTrue(founded)
     }
     
+    func testValidateContinueOnAlertForDuplicateItems() {
+        
+        let name = "Cheese"
+        let quality = "1"
+        let value = "Pack"
+        
+        addItem(name: name, quality: quality, item: value)
+        tapOnGraceryList()
+        
+        let beforeCount = getItemInList()
+        
+        addItem(name: name, quality: quality, item: value)
+        clickContinueButtonOnAlert()
+        tapOnGraceryList()
+        
+        let afterCount = getItemInList()
+        
+        XCTAssertTrue(beforeCount < afterCount)
+    }
     
     
 }
